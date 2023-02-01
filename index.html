@@ -1,0 +1,433 @@
+<!-- Main bootstrap files taken from https://getbootstrap.com/docs/4.3/getting-started/introduction/ v4.3-->
+
+<!-- DOCTYPE to inform the browser which version of html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<!-- Code for icon in tab generated at https://realfavicongenerator.net/ -->
+<!--icon tab code taken from https://codelikeadev.com/blog/favicon-in-html-website-->
+<!-- This means that the tab has an icon and a title - which is cool! -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Edible iNSECT Shop!</title>
+<!-- logo image sourced from https://horizoninsects.co.uk/ I didn't make any of the icons or images myself.
+So, I wouldn't be able to use this website in reality unless I got the relevant permissions from the creators.-->
+<link rel="icon" href="img/icon/favicon.ico" alt="orange red green logo with a grasshopper in the middle">
+
+    <!-- Required meta tags from https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- link to bootstrap for the css files and webpage structure 
+        https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+        <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+    <link href = "CSS/style.css" rel = "stylesheet" type = "text/css">
+
+</head>
+
+<body>
+
+    <!-- Start of the 'hero' section-->
+    <!-- The 'hero' section is the oversized banner and menu header. This is what you first see in the website before scrolling down -->
+    <div class="hero">
+        <!-- This is the header section and is used to identify the styles in the CSS document -->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Setting the size of the company logo header section based on the bootstrap grid system-->
+                    <div class="col-lg-3 col-md-12">
+                        <!-- This is the identifying the header logo section for the CSS format-->
+                        <!-- This is the same for all div class = "" sections and is used to refer to the styles setup in the CSS file.
+                        I won't need to keep commenting this throughout the document at the div class, 
+                        as it is assumed that this process is understood-->
+                        <div class="header-logo">
+                            <!-- logo image sourced from https://horizoninsects.co.uk/
+                            This logo is used throughout the website, so will only reference here and assume that it is recognised
+                            for the other times I use the logo image.-->
+                            <a href="#shop"><img src="img/icon/insect shop - logo.jpg" width="32px" height = "32px" alt="orange red green logo with a grasshopper in the middle"><span> iNSECT</span>SHOP!</a>
+                        </div>
+                    </div>
+                    <!-- This is the menu at the top of the page in an unorganised list and links (if required)-->
+                    <!-- Setting the size of the header menu section based on the bootstrap grid system-->
+                    <div class="col-lg-5 col-md-12">
+                        <nav class="header-menu">
+                            <ul>
+                                <!-- This shows the active menu item is Home. It will always be underlined if you are in this page-->
+                                <li class="active"><a href="#">Home</a></li>
+                                <!-- The otheres will be underlined if the mouse hovers over the menu item (see the CSS file)-->
+                                <li><a href="#shop">Shop</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Setting the size of the login header right section based on the bootstrap grid system-->
+                    <div class="col-lg-3 col-md-12">
+                        <!-- This is the login / register / baasket section of the header on the right hand side -->
+                        <div class="header-right">
+                            <div class="header-right-btn">
+                                <a href="#">Login</a>
+                                <a href="#">Register</a>
+                                <a href="#">Basket</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- start of slider section-->
+        <!-- I could have turned this into a selection of images that slide in on the hero image.
+        However, this wasn't required in the task so left it as one image so is a short section -->
+        <section class="hero-slider">
+            <div class="slider-bg-box">
+                <!-- The colour of the image is used as the colour of the footer as a design preference-->
+                <img src = "img/bug-in-cake.jpg" alt="Baked grasshopper in a cake holding a raspberry ready to be eaten!">
+            <!--image source: https://www.newyorker.com/magazine/2021/09/06/magazine20110815grub-->
+            </div>
+            
+        </section>
+        <!-- end of slider section-->
+    </div>
+    <!-- End of the 'hero' section-->
+
+
+    <!-- Start of the 'product' section-->
+    <!-- This is the main shop in the website and task. Once one product is set-up. 
+        It was then copied and pasted 10 times to fufil the 10 items for the task.
+    The images and alt text etc. was then changed to suit the ten different products-->
+    <!-- Therefore, I only need to comment on the first product as the rest are copied across and work in exactly the same way-->
+    <section class="product-section padding-layout">
+        <div class="container">
+            <div class="heading-container text-center">
+                <!-- Main heading for the shop section -->
+                <h2 id = "shop"><span>Bug </span>Products</h2>
+            </div>
+                <div class="row">
+                    <!-- First product in the shop setting the size of the bootstrap grid system-->
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <!-- These are the buttons that appear on the images 
+                                    These appear when the mouse hovers or image is clicked on.-->
+                                <div class="options">
+                                    <!-- This would go to the grasshopper page-->
+                                    <a href="#" class="option1">
+                                        Grasshopper
+                                    </a>
+                                    <!-- This would put the product straight in the basket-->
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- grasshopper image sourced https://www.tastingtable.com/916993/why-europeans-may-soon-begin-eating-more-insects/-->
+                                <img src = "img/grasshopper.jpg" alt="Several cooked grasshoppers in a bowl with one being taken by chopsticks">
+                            </div>
+                            <!-- This gives the name of the product and price and is always visable under the picture-->
+                            <div class="detail-box">
+                                <h5>Grasshoppers</h5>
+                                <h6>£4.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second product in the shop... This is repeated for ten products below and will have the same comments.
+                    For comment information see the first product-->
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <div class="options">
+                                    <a href="#" class="option1">
+                                        Mealworm
+                                    </a>
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- mealworm image sourced https://www.forbes.com/sites/alexledsom/2020/04/04/edible-insects-most-likely-coming-to-european-supermarkets-soon/?sh=11e9fcac2f0e-->
+                                <img src = "img/mealworm.jpg" alt="Bunch of dead mealworm ready to be cooked">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Mealworm</h5>
+                                <h6>£2.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <div class="options">
+                                    <a href="#" class="option1">
+                                        Scorpion
+                                    </a>
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- Scorpion image sourced https://www.bbc.co.uk/newsround/46273308-->
+                                <img src = "img/Scorpion.jpg" alt="Cooked scorpion on a delicious potato cake">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Scorpion</h5>
+                                <h6>£9.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <div class="options">
+                                    <a href="#" class="option1">
+                                        Crickets
+                                    </a>
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- crickets image sourced https://www.forbes.com/sites/alexledsom/2020/04/04/edible-insects-most-likely-coming-to-european-supermarkets-soon/?sh=11e9fcac2f0e-->
+                                <img src = "img/crickets.jpg" alt="Cooked crickets sprinkled on a cheesy dinner">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Crickets</h5>
+                                <h6>£3.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <div class="options">
+                                    <a href="#" class="option1">
+                                        Cicada
+                                    </a>
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- Cicada image sourced https://www.nbcnews.com/id/wbna45048564-->
+                                <img src = "img/Cicada.jpg" alt="Close up of tasty honey coated cicada on a bed of salad">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Cicada</h5>
+                                <h6>£8.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <div class="options">
+                                    <a href="#" class="option1">
+                                        Black Ants
+                                    </a>
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- Black ants image sourced https://www.next-food.net/product/black-edible-ants//-->
+                                <img src = "img/black-ants.jpeg" alt="Dried and toasted pile of dehydrated black ants on a white background, ready as a snack">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Black Ants</h5>
+                                <h6>£5.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <div class="options">
+                                    <a href="#" class="option1">
+                                        Rhino Beetles
+                                    </a>
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- Rhinoceros Beetles image sourced https://woven-network.co.uk/blog/edible-insects-list/#:~:text=Yet%20another%20insect%20eaten%20almost,partly%20responsible%20for%20their%20popularity-->
+                                <img src = "img/Rhinoceros Beetles.jpg" alt="Single Rhino Beetle drying out on a stripped piee of bark">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Rhino Beetles</h5>
+                                <h6>£7.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <div class="options">
+                                    <a href="#" class="option1">
+                                        Mopane worms
+                                    </a>
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- Mopane worms image sourced https://www.tastingtable.com/916993/why-europeans-may-soon-begin-eating-more-insects/-->
+                                <img src = "img/Mopane worms.jpg" alt="Cooked opane beetles on a bed of rice covered in a spice mix">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Mopane worms</h5>
+                                <h6>£7.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <div class="options">
+                                    <a href="#" class="option1">
+                                        Agave Weevils
+                                    </a>
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- Agave Weevils image sourced https://woven-network.co.uk/blog/edible-insects-list/#:~:text=Yet%20another%20insect%20eaten%20almost,partly%20responsible%20for%20their%20popularity.-->
+                                <img src = "img/Agave Weevils.jpg" alt="A dozen honey glazed agave weevils in a bowl, being held out for display">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Agave Weevils</h5>
+                                <h6>£6.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="option-container">
+                                <div class="options">
+                                    <a href="#" class="option1">
+                                        Termites
+                                    </a>
+                                    <a href="#" class="option2">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <!-- Termites image sourced https://www.insider.com/bugs-you-can-eat-2018-10#termites-are-good-toasted-4-->
+                                <img src = "img/Termites.jpg" alt="Close up of a pile of dehydrated termites ready to be used for cooking">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Termites</h5>
+                                <h6>£2.99/kg</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- End of product section -->    
+
+    <!-- Start of Footer section-->
+    <!-- This footer section is used to give company info including a logo as required by the task, more menu options similar to the header.
+    But also, a contact details subscribe form as required by the task.-->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Setting the size of the company info section based on the bootstrap grid system-->
+                <div class="col-md-4">
+                    <!-- This is the identifying the footer logo section for the CSS format-->
+                    <div class="footer-logo">
+                        <!-- logo image sourced from https://horizoninsects.co.uk/-->
+                        <a href="#shop"><img src="img/icon/insect shop - logo.jpg" width="32px" height = "32px" alt="orange red green logo with a grasshopper in the middle"><span> iNSECT</span>SHOP!</a>
+                    </div>
+                    <!-- This is the identifying the information section and for the CSS file-->
+                    <div class="information">
+                        <p><strong>Address:</strong> iNSECT SHOP Kendal, Cumbria, UK, LA9 BUG</p>
+                        <p><strong>Telephone:</strong> +44 15395 818181</p>
+                        <p><strong>Email:</strong> info@insectshop.com</p>
+                    </div>
+                </div>
+                <!-- Setting the size of the footer-menu in the foooter section based on the bootstrap grid system-->
+                <div class="col-md-8">
+                    <div class="row">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <!-- Setting the size of the 'Menu' list in the foooter section based on the bootstrap grid system-->
+                            <div class="col-md-6">
+                                <!-- This is the identifying the footer-menu section and for the CSS file-->
+                                <div class="footer-menu">
+                                    <h3><img src="img/icon/insect shop - logo.jpg" width="32px" height = "32px" alt="orange red green logo with a grasshopper in the middle">Menu</h3>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#shop">Shop</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Setting the size of the 'Account' list in the foooter section based on the bootstrap grid system-->
+                            <div class="col-md-6">
+                                <div class="footer-menu">
+                                    <h3><img src="img/icon/insect shop - logo.jpg" width="32px" height = "32px" alt="orange red green logo with a grasshopper in the middle">Account</h3>
+                                    <ul>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Personal</a></li>
+                                        <li><a href="#">Basket</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Setting the size of the 'Information' Subscribe in the foooter section based on the bootstrap grid system-->
+                    <div class="col-md-5">
+                        <div class="footer-menu">
+                            <h3><img src="img/icon/insect shop - logo.jpg" width="32px" height = "32px" alt="orange red green logo with a grasshopper in the middle">Subscribe</h3>
+                            <!-- Using the information format in the footer for the info explaining leaving an email contact detail-->
+                            <div class="information">
+                                <p>Leave your email address so we can get in contact with you <img src="img/icon/insect shop - logo.jpg" width="32px" height = "32px" alt="orange red green logo with a grasshopper in the middle"></p>
+                                <!--Included a small company logo next to the contact details form -->
+                            </div>
+                            <!-- This id's and defines the format for the form section see the CSS file for the style-->
+                            <div class="form_sub">
+                                <form>
+                                    <!-- This creates the fields and information pre populated and required for the form-->
+                                    <fieldset>
+                                        <div class="field">
+                                            <input type="email" name="email" placeholder="Enter Your Email">
+                                            <input type = "submit" value ="Subscribe" name="">
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- End of Footer section -->
+</body>
+<!-- End of body section -->
+</html>
+<!-- End of html file -->
+
